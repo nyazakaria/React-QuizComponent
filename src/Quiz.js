@@ -12,15 +12,18 @@ export default class Quiz extends React.Component{
 
     render( ){
 
-        console.log('test');
+        console.log(quizData.quiz_questions[0].instruction_text);
         return (
-            <div className='QuizQuestion'> 
-            {quizData.quiz_questions.map( question => {
-               return ( <div key={question.id+question.answer}>
-                <ul><li>{question.instruction_text}</li></ul>
-               </div>)
-            } )}
+            <div > 
+                {quizData.quiz_questions[0].instruction_text}
+              
             </div>
         )
     }
 }
+/*
+ {quizData.quiz_questions.map( question => {
+               return ( <div key={question.id+question.answer}>
+                <ul><li>{question.instruction_text}</li></ul>
+               </div>)
+            } )}*/
