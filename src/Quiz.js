@@ -11,10 +11,8 @@ export default class Quiz extends React.Component{
     }
 
     render( ){
-
-        console.log(quizData.quiz_questions[0].instruction_text);
         return (
-            <div > 
+            <div className='QuizQuestion' > 
                 {quizData.quiz_questions[0].instruction_text}
               
             </div>
