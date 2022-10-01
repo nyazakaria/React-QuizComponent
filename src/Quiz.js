@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react'
 
 let quizData = require('./quiz_data.json');
 
-export default class Quiz extends React.Component{
+ class Quiz extends Component{
     constructor(props) {
         super(props)
         this.state = {
@@ -25,3 +25,6 @@ export default class Quiz extends React.Component{
                 <ul><li>{question.instruction_text}</li></ul>
                </div>)
             } )}*/
+
+            
+export default Quiz;
